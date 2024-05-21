@@ -1,0 +1,153 @@
+/* CSS existente */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #e45781;
+  color: #fad3d9;
+  text-align: center;
+  padding: 10px 0;
+}
+
+header h1 {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+header h2 {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+h3 {
+  color: #e45781;
+  font-size: 30px;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+
+
+.services {
+  text-align: center;
+  padding: 20px 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.cta {
+  text-align: center;
+  background-color: #f9f9f9;
+  padding: 20px;
+}
+
+.btn-whatsapp {
+  display: inline-block;
+  background-color: #e45781;
+  color: #fad3d9;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+footer {
+  text-align: center;
+  background-color: #e45781;
+  color: #fad3d9;
+  padding: 10px 0;
+}
+
+/* Ajusta na largura do carrossel para corresponder à largura das imagens */
+.slick-carousel {
+  margin: 0 auto;
+  width: 100%; /* Ajusta a largura do carrossel para 100% */
+}
+
+.slick-slide {
+  text-align: center;
+  padding: 5px; /* Adiciona espaçamento interno para o slide */
+}
+
+.slick-slide img {
+  max-width: 70%; /* Reduz o tamanho da imagem para 80% do contêiner */
+  border-radius: 5px;
+  transition: transform 0.3s;
+  margin: 0 auto; /* Centraliza a imagem */
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.slick-slide:hover img {
+  transform: scale(1.05);
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.9);
+}
+
+.slick-slide p {
+  margin-top: 10px; /* Adiciona um espaçamento entre a imagem e o título */
+  max-width: 80%; /* Define a largura máxima do título */
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center; /* Garante que o texto esteja centralizado */
+  cursor: pointer; /* Adiciona um cursor de ponteiro ao passar o mouse sobre o título */
+  background-color: #e45781; /* Cor de fundo do botão */
+  color: #fad3d9; /* Cor do texto do botão */
+  padding: 10px 20px; /* Espaçamento interno do botão */
+  border-radius: 10px; /* Bordas levemente arredondadas */
+  transition: background-color 0.3s; /* Transição suave para a cor de fundo */
+}
+
+p {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.slick-slide p:hover {
+  background-color: #d14670; /* Cor de fundo ao passar o mouse */
+}
+
+.slick-dots {
+  bottom: -30px;
+}
+
+.slick-dots li button:before {
+  color: #333;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #25d366;
+}
+
+.service-info {
+  display: none; /* Esconde o balão de informação por padrão */
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px; /* Bordas mais arredondadas */
+  padding: 20px; /* Mais espaçamento interno */
+  margin-top: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
+  text-align: left;
+  font-size: 16px; /* Aumenta o tamanho da fonte */
+  line-height: 1.6; /* Aumenta o espaçamento entre linhas */
+  max-width: 80%; /* Aumenta a largura máxima */
+  width: 100%; /* Garante que a largura ocupe todo o espaço disponível */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.service-title {
+  width: 58%;
+  display: inline-block;
+  margin-top: 10px;
+  background-color: #e45781;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.service-title:hover {
+  background-color: #d14670;
+}
