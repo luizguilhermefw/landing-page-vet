@@ -4,65 +4,139 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Dra. Ingrid Frances D. Wagner - Veterinária em Domicílio para Cães. Cuidados personalizados e de alta qualidade no conforto da sua casa.">
+  <meta name="keywords" content="veterinária, domicílio, cães, cuidados, consultas, vacinas, atestado, exames">
   <title>Dra. Ingrid Frances D. Wagner - Veterinária em Domicílio</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="responsive.css">
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <div class="header-container">
-      <div class="header-title">
-        <h1>Dra. Ingrid Frances D. Wagner</h1>
-        <h2>Veterinária em Domicílio para Cães</h2>
-        <p>CRMVPR 15603</p>
+  <section>   
+    <div class="profile-container">
+      <div class="text-container">
+        <h1>Atendimento <p>veterinário em domicílio</p></h1>
+        <h2>Cuido de quem você mais ama no lugar onde ele mais ama estar!
+          Com atendimento PERSONALIZADO e HUMANIZADO
+          O atendimento domiciliar nos permite oferecer cuidados personalizado,
+         atendendendo às necessidades específicas do seu pet.</p></h2>
+        <label class="btn-wrapper">
+          <a href="https://wa.me/seunumerodewhatsapp" target="_blank" rel="noopener" class="btn-schedule">Agendar Atendimento</a>
+        </label>
       </div>
+      <img src="./assets/perfilvet.png" alt="Foto da Dra. Ingrid Frances D. Wagner">
     </div>
-  </header>
-
-  <section class="profile-container">
-    <img src="./assets/veterinariaperfil.png" alt="Foto da Dra. Ingrid Frances D. Wagner">
-      <p>Olá, sou a Dra. Ingrid Frances D. Wagner, veterinária especializada em cuidados domiciliares para cães. Com anos de experiência e dedicação, ofereço serviços personalizados e de alta qualidade para garantir a saúde e bem-estar do seu melhor amigo. A comodidade do atendimento em domicílio permite que seu pet receba os cuidados necessários no conforto e segurança do seu lar.</p>
-      <a href="https://wa.me/seunumerodewhatsapp" target="_blank" rel="noopener" class="btn-schedule">Agendar Atendimento</a>
-    </section>
+  </section>
 
   <section class="services">
     <h3>Nossos Serviços</h3>
     <div class="slick-carousel">
-      <div>
+      <div class="service-item">
         <img src="./assets/atestado.png" alt="Consulta">
-        <p class="service-title" onclick="toggleInfo(this)">Consultas</p>
-        <div class="service-info">
-          <p>Proporcione ao seu cãozinho um atendimento personalizado no conforto do seu lar. Nossas consultas domiciliares eliminam o estresse das viagens e esperas na clínica. Identifique e trate problemas de saúde com rapidez e eficiência, garantindo o bem-estar do seu melhor amigo.</p>
-        </div>
+        <p class="service-title">Consultas</p>
       </div>
-      <div>
+      <div class="service-item">
         <img src="./assets/vacina.png" alt="Vacinas">
-        <p class="service-title" onclick="toggleInfo(this)">Vacinas</p>
-        <div class="service-info">
-          <p>Mantenha seu cãozinho protegido contra diversas doenças sem sair de casa. Oferecemos um serviço de vacinação domiciliar completo, com a conveniência de agendamentos flexíveis. Cuide da saúde do seu pet com segurança e praticidade, sem o estresse do transporte.</p>
-        </div>
+        <p class="service-title">Vacinas</p>
       </div>
-      <div>
+      <div class="service-item">
         <img src="./assets/atesdadoViagens.png" alt="Atestado de Viagem">
-        <p class="service-title" onclick="toggleInfo(this)">Atestado de Viagens</p>
-        <div class="service-info">
-          <p>Planejando uma viagem com seu pet? Obtenha o atestado de saúde necessário sem complicações. Realizamos a avaliação completa e emitimos o certificado na sua residência, garantindo que seu pet esteja apto a viajar com segurança e tranquilidade.</p>
-        </div>
+        <p class="service-title">Atestado de Viagens</p>
       </div>
-      <div>
+      <div class="service-item">
         <img src="./assets/consulta.png" alt="Exames">
-        <p class="service-title" onclick="toggleInfo(this)">Exames</p>
-        <div class="service-info">
-          <p>Realizamos diversos exames laboratoriais diretamente na sua casa. Com nosso serviço domiciliar, você economiza tempo e oferece ao seu cãozinho um ambiente menos estressante para a coleta de amostras. Resultados rápidos e precisão diagnóstica para cuidar da saúde do seu pet.</p>
-        </div>
+        <p class="service-title">Exames</p>
       </div>
     </div>
   </section>
+
+  <section>
+    <div class="vantage-container-left">
+        <img src="./assets/vet-preenchendo-cartao-de-vacina.png" alt="Foto da Dra. Ingrid na casa do paciente assinando cartão de vacina.">
+        <div class="text-vantage-left">
+            <h3>Eficácia do Atendimento Domiciliar</h3>
+            <h4>"O atendimento domiciliar proporciona o mesmo nível de cuidado que uma clínica, com o benefício adicional de reduzir o estresse do seu pet ao ser tratado em um ambiente familiar. 
+              Nossos profissionais trazem todos os equipamentos necessários para realizar exames e procedimentos de forma eficiente e segura."</h4>
+        </div>
+    </div>
+</section>
+
+<section>
+  <div class="vantage-container-right">
+    <div class="text-vantage-right">
+      <h3>Conforto e Segurança</h3>
+      <h4>"Nossos pacientes se sentem mais relaxados em seu ambiente familiar, o que torna o processo de consulta ou tratamento muito menos estressante. 
+        Em casa, seu pet está menos exposto a outros animais doentes, minimizando os riscos de contágio."</h4>
+    </div>
+    <img class="vantage-container-img" src="./assets/proprietario-abraçado-com-seu-pet.png" alt="Foto de proprietário em casa abraçando seu pet.">
+  </div>
+</section>
+
+<section>
+  <div class="vantage-container-left-two">
+    <img src="./assets/vet-foto-com-paciente-feliz-em-casa.png" alt="Foto da Dra. Ingrid com paciente em casa feliz">
+    <div class="text-vantage-left-two">
+      <h3>Atendimento Personalizado e Maior Comodidade</h1>
+      <h4>Cada animal é único, e o atendimento domiciliar nos permite oferecer cuidados personalizados, atendendo às necessidades específicas do seu pet. 
+        Não importa o clima lá fora, o atendimento veterinário vem até você. Sem preocupações com chuva, frio ou calor extremo!</h2>
+    </div>
+  </div>
+</section>
+
+<div class="btn-wrapper-two">
+  <a href="https://wa.me/seunumerodewhatsapp" target="_blank" rel="noopener" class="btn-schedule-two">Agendar Atendimento</a>
+</div>
+  
+<section class="testimonials">
+  <div>
+    <h3>Depoimentos de Clientes</h3>
+    <div class="testimonial-container">
+      <div class="testimonial" id="testimonial-1">
+        <p>A Dra. Ingrid é incrível! Meu cãozinho sempre fica calmo durante as consultas em casa. Recomendo a todos!" - Maria Esmeraldino</p>
+      </div>
+      <div class="testimonial" id="testimonial-2">
+        <p>"Excelente profissional. A conveniência do atendimento em domicílio é imbatível!" - Ceres Domingues</p>
+      </div>
+      <div class="testimonial" id="testimonial-3">
+        <p>"Muito querida e atenciosa! Obrigada ❤" - Ana Fragoso</p>
+      </div>
+      <div class="testimonial" id="testimonial-4">
+        <p>"Um serviço com excelência e todo o cuidado com o animal para que o mesmo fique bem confortável." - Claudio Luiz</p>
+      </div>
+      <div class="testimonial" id="testimonial-5">
+        <p>"A dra vacinou a dinky que é uma cadelinha, e foi muito interessante ver como agiu para que ela ficasse tranquilinha, 
+          muito legal, gostamos muito e a dinky não teve nenhuma reação. 
+          E o melhor que não precisamos sair de casa🦮" - Rossany Fernandes</p>
+      </div>
+    </div>
+    <div class="testimonial-controls">
+      <button id="prev">❮</button>
+      <button id="next">❯</button>
+    </div>
+  </div>
+</section>
+
+<section class="quemsou-container">
+    <div class="text-container">
+      <h3>Dra. Ingrid Frances D. Wagner</h3>
+      <h4>CRMV-PR 15603</h4>
+      <p>Olá, eu sou a Dra. Ingrid Frances D. Wagner, médica veterinária especializada em cães, com mais de 5 anos de experiência na área. Minha paixão pelos animais me levou a focar no atendimento clínico especializado em cachorros, sempre priorizando um atendimento humanizado e acolhedor para cada pet e seus tutores.
+        <p>Atendo na cidade de Cascavel, PR, oferecendo serviços dedicados e personalizados para garantir a saúde e o bem-estar dos seus amigos de quatro patas. Se você busca um atendimento de qualidade, feito com carinho e profissionalismo, estou à disposição para cuidar do seu pet com todo o respeito que ele merece.</p></p>
+    </div>
+  </div>
+  <img src="./assets/foto-perfil-draingrid.png" alt="Foto da Dra. Ingrid Frances D. Wagner">
+</div>
+</section>
+
   <section class="cta">
     <p>Entre em contato agora mesmo para agendar um atendimento!</p>
     <a href="https://wa.me/seunumerodewhatsapp" target="_blank" rel="noopener" class="btn-whatsapp">Agendar Agora</a>
   </section>
+  
   <footer>
     <p>&copy; 2024 Dra. Ingrid Frances D. Wagner. Todos os direitos reservados.</p>
   </footer>

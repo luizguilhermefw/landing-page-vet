@@ -1,223 +1,396 @@
 body {
-  background-color: whitesmoke;
-  font-family: Arial, sans-serif;
+  background-color: white;
   margin: 0;
   padding: 0;
 }
 
-header {
-  background: radial-gradient(circle, #e45781, #fad3d9);
-  color: #fad3d9;
-  padding: 5px 0;
-  position: relative;
-  top: 10px; /* Levemente abaixo da borda superior */
-  margin: 0 20px; /* Distante das bordas laterais */
-  border-radius: 15px; /* Bordas arredondadas */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
+h1 {
+  font-size: 54px;
+  line-height: 0.1;
+  margin-bottom: 0.50px;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
-header h1 {
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  text-align: center;
-}
-
-header h2 {
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  text-align: center;
-}
-
-header p {
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  text-align: center;
-}
-
-h3 {
-  color: #e45781;
-  font-size: 30px;
-  text-align: center;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-}
-
-.services {
-  text-align: center;
-  padding: 20px 0;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.cta {
-  text-align: center;
-  background-color: #f9f9f9;
-  padding: 20px;
-}
-
-.btn-whatsapp {
-  display: inline-block;
-  background-color: #e45781;
-  color: #fad3d9;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 5px;
+h2 {
+  font-size: 20px;
+  line-height: 0.40;
+  margin-bottom: 45px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .profile-container {
   display: flex;
-  align-items: left;
-  background-color: #fad3d9; /* Cor de fundo da caixa */
+  flex-direction: row;
+  align-items: center; 
+  justify-content: space-between;
   padding: 20px;
-  border-radius: 15px; /* Bordas arredondadas */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
-  margin: 40px 20px; /* Centraliza horizontalmente */
-  width: 60%; /* Largura da caixa */
-  position: relative; /* Para permitir o posicionamento absoluto do botão */
+  margin: 40px 20px;
+  margin-left: 5%;
+  text-align: left;
 }
 
 .profile-container img {
-  border-radius: 10%; /* Bordas arredondadas para a imagem */
-  width: 230px; /* Ajuste conforme necessário */
-  height: auto; /* Ajuste conforme necessário */
-  margin-right: 10px; /* Espaçamento entre a imagem e o texto */
+  order: 2;
+  width: 550px;
+  height: auto;
+  margin-right: 5%;
 }
 
-.profile-container p {
-  flex: 1;
-  text-align: justify; /* Texto justificado */
-  font-size: 18px;
-  color: #e45781;
-}
-
-.btn-schedule {
-  position: absolute;
-  right: -350px; /* Ajuste a distância conforme necessário */
-  background-color: #e45781; /* Ajuste a cor conforme necessário */
-  color: white;
-  padding: 20px 20px;
-  text-decoration: none;
-  border-radius: 15px;
-  text-align: center;
-  width: 200px; /* Largura do botão */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-  top: 50%; /* Centraliza verticalmente */
-  transform: translateY(-50%); /* Ajuste vertical */
-  animation: pulse 1.5s infinite;
+.text-container {
+  order: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 @keyframes pulse {
-  0% {
-    transform: scale(1);
-    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+  0%, 100% {
+    transform: scale(1.5);
+    box-shadow: 0 0 0 0 rgba(198, 164, 155, 0.5); /* Cor principal suavizada */
   }
-  50% {
-    transform: scale(1.05);
-    box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+
+  70% {
+    transform: scale(1.2);
+    box-shadow: 0 0 0 20px rgba(198, 164, 155, 0); /* Transparente para suavizar */
   }
+
   100% {
     transform: scale(1);
-    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+    box-shadow: 0 0 0 0 rgba(198, 164, 155, 0); /* Transparente no final */
   }
 }
 
-.btn-whatsapp:hover {
-  animation: none; /* Remove a animação pulse no hover */
+.btn-schedule {
+  background-color: #c6a49b;
+  color: white;
+  padding: 20px 50px;
+  text-decoration: none;
+  border-radius: 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  animation: pulse 1.2s infinite;
+  transition: background-color 0.3s;
+  font-size: 25px;
+  align-self: center;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
 }
 
-footer {
+.btn-schedule:hover {
+  background-color: #d14670;
+}
+
+
+.services {
   text-align: center;
-  background-color: #e45781;
-  color: #fad3d9;
-  padding: 10px 0;
+  padding: 20px 0;
+  margin-bottom: 100px;
 }
 
-/* Ajusta na largura do carrossel para corresponder à largura das imagens */
+.services h3 {
+  color: black;
+  font-size: 40px;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
 .slick-carousel {
+  display: flex;
+  justify-content: center;
+  gap: 55px;
+  flex-wrap: wrap;
   margin: 0 auto;
-  width: 100%; /* Ajusta a largura do carrossel para 100% */
+  width: 90%;
 }
 
 .slick-slide {
   text-align: center;
-  padding: 5px; /* Adiciona espaçamento interno para o slide */
+  flex: 0 1 calc(25% - 30px); /* Ajusta a largura dos slides com espaçamento fixo */
+  box-sizing: border-box;
 }
 
-.slick-slide img {
-  max-width: 70%; /* Reduz o tamanho da imagem para 80% do contêiner */
-  border-radius: 5px;
-  transition: transform 0.3s;
-  margin: 0 auto; /* Centraliza a imagem */
-  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+.service-item {
+  text-align: center; /* Certifica-se de que o conteúdo do item do serviço está centralizado */
 }
 
-.slick-slide:hover img {
-  transform: scale(1.05);
-  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.9);
+.service-item img {
+  width: 250px;
+  height: 250px;
+  border-radius: 20%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.slick-slide p {
-  margin-top: 10px; /* Adiciona um espaçamento entre a imagem e o título */
-  max-width: 80%; /* Define a largura máxima do título */
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center; /* Garante que o texto esteja centralizado */
-  cursor: pointer; /* Adiciona um cursor de ponteiro ao passar o mouse sobre o título */
-  background-color: #e45781; /* Cor de fundo do botão */
-  color: #fad3d9; /* Cor do texto do botão */
-  padding: 10px 20px; /* Espaçamento interno do botão */
-  border-radius: 10px; /* Bordas levemente arredondadas */
-  transition: background-color 0.3s; /* Transição suave para a cor de fundo */
-}
-
-p {
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-.slick-slide p:hover {
-  background-color: #d14670; /* Cor de fundo ao passar o mouse */
-}
-
-.slick-dots {
-  bottom: -30px;
-}
-
-.slick-dots li button:before {
-  color: #333;
-}
-
-.slick-dots li.slick-active button:before {
-  color: #25d366;
-}
-
-.service-info {
-  display: none; /* Esconde o balão de informação por padrão */
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 10px; /* Bordas mais arredondadas */
-  padding: 20px; /* Mais espaçamento interno */
-  margin-top: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
-  text-align: left;
-  font-size: 16px; /* Aumenta o tamanho da fonte */
-  line-height: 1.6; /* Aumenta o espaçamento entre linhas */
-  max-width: 80%; /* Aumenta a largura máxima */
-  width: 100%; /* Garante que a largura ocupe todo o espaço disponível */
-  margin-left: auto;
-  margin-right: auto;
+.service-item img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .service-title {
-  width: 58%;
-  display: inline-block;
-  margin-top: 10px;
-  background-color: #e45781;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Lato", sans-serif;
+  color: #333;
   cursor: pointer;
-  transition: background-color 0.3s;
+  margin: 10px 0;
+  transition: color 0.3s;
+  text-align: center; /* Centraliza o texto do título */
 }
 
 .service-title:hover {
+  color: #d14670;
+}
+
+/* Ajuste nas seções vantage para harmonizar o layout */
+.vantage-container-left,
+.vantage-container-left-two,
+.vantage-container-right {
+  display: flex;
+  align-items: center;
+  gap: 30px; /* Espaçamento uniforme entre imagem e texto */
+  margin: 40px 5%; /* Margem inferior consistente */
+}
+
+.vantage-container-left img,
+.vantage-container-left-two img,
+.vantage-container-right img {
+  width: 35%;
+  height: auto;
+  border-radius: 35px;
+}
+
+.text-vantage-left,
+.text-vantage-left-two,
+.text-vantage-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 60%; /* Mantém o alinhamento consistente */
+  text-align: justify;
+}
+
+h3 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+h4 {
+  font-size: 1.2em;
+  line-height: 1.5;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  text-align: justify;
+  margin: 10px 0; 
+}
+
+.btn-wrapper-two {
+  text-align: center; 
+  margin-top: 20px; 
+  margin-bottom: 20px;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1.5);
+    box-shadow: 0 0 0 0 rgba(198, 164, 155, 0.5); 
+  }
+
+  70% {
+    transform: scale(1.2);
+    box-shadow: 0 0 0 20px rgba(198, 164, 155, 0); 
+  }
+
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(198, 164, 155, 0); 
+  }
+}
+
+.btn-schedule-two {
+  background-color: #c6a49b;
+  color: white;
+  padding: 20px 50px;;
+  text-decoration: none;
+  border-radius: 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  animation: pulse 1.2s infinite;
+  transition: background-color 0.3s;
+  font-size: 25px;
+  align-self: center;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+}
+
+.btn-schedule-two:hover {
   background-color: #d14670;
+}
+
+
+.testimonials {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.testimonials h3 {
+  color: black;
+  font-size: 40px;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  margin-bottom: 20px;
+}
+
+.testimonial-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%; /* Mantenha 100% para ocupar toda a largura do container pai */
+  max-width: 800px; /* Defina um max-width se necessário */
+  margin: 0 auto;
+  display: flex;
+  transition: transform 1s ease-in-out;
+  padding: 0 10px; 
+  padding-bottom: 20px;
+}
+
+.testimonial {
+  background-color: #fbeee6;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 0; /* Remova a margem lateral */
+  min-width: 100%; /* Isso garante que cada depoimento ocupe 100% do container */
+  box-sizing: border-box;
+}
+
+.testimonial p {
+  font-size: 18px;
+  font-family: "Lato", sans-serif;
+  color: #666;
+}
+
+.testimonial-controls {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.testimonial-controls button {
+  background-color: #c6a49b;
+  border: none;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+  font-size: 24px;
+  padding: 10px 15px;
+  margin: 0 10px;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+.testimonial-controls button:hover {
+  background-color: #d14670;
+}
+
+.quemsou-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center; 
+  justify-content: space-between;
+  padding: 20px;
+  margin: 40px 20px;
+  margin-left: 5%;
+  text-align: left;
+}
+
+.quemsou-container img {
+  order: 2;
+  width: 650px; /* Ajuste conforme necessário */
+  height: auto;
+  margin-right: 5%;
+}
+
+.quemsou-container .text-container {
+  order: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 50%;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  text-align: justify;
+  margin: 10px 0; 
+}
+
+
+.cta {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #c6a49b;
+  color: white;
+}
+
+.cta p {
+  font-size: 24px;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  margin-bottom: 20px;
+}
+
+.btn-whatsapp {
+  background-color: white;
+  color: #c6a49b;
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  font-size: 20px;
+  transition: background-color 0.3s, color 0.3s;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.btn-whatsapp:hover {
+  background-color: #d14670;
+  color: white;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #f5f5f5;
+}
+
+footer p {
+  font-size: 14px; 
+  font-family: "Lato", sans-serif;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .profile-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-container img {
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  .text-container {
+    padding-right: 0;
+  }
 }
